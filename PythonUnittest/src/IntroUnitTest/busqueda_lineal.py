@@ -10,14 +10,16 @@ def busqueda_lineal_mal(lista, x):
         False: no se ha encontrado el valor en la lista
     """
     encontrado = False
-    for i in range(len(lista)-1):
+    for i in range(len(lista)):
         if(lista[i] == x):
             encontrado = True
-    
+
     return encontrado
 
     
-def busqueda_lineal_noEficiente(lista, x):
+
+    
+def busqueda_lineal_no_eficiente(lista, x):
     """Busqueda lineal
     Funcion que busca dentro de una lista un valor dado.
     Existe una manera de aumentar el rendimiento de la función (No funcional)
@@ -29,12 +31,11 @@ def busqueda_lineal_noEficiente(lista, x):
         True: se ha encontrado el valor en la lista
         False: no se ha encontrado el valor en la lista
     """
-    encontrado = False
-    for i in range(len(lista)):
-        if(lista[i] == x):
-            encontrado = True
-    
-    return encontrado
+    for elem in lista:
+        if(elem == x):
+           return True
+
+    return False
 
 def busqueda_lineal(lista, x):
     """Busqueda lineal

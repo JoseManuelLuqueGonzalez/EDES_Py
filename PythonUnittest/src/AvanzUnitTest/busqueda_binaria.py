@@ -1,4 +1,4 @@
-def busqueda_binaria(lista, x):
+def binaria(lista, x):
     """
     Búsqueda binaria
     Precondición: lista está ordenada

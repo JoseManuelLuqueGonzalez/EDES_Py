@@ -5,27 +5,26 @@ def busqueda_matriz_error(matriz, x):
     1 error de aceptación (No funcionales)
     """
     encontrado = False
-    for i in range(len(matriz)-1):
-        for j in range(len(matriz[i])-1):
-            if (matriz[j][i] == x):
-                encontrado = True
-    return encontrado
-
-
-
-
-
-def busqueda_matriz_noEficiente(matriz, x):
-    """Eficiencia baja
-    En esta función se han solventado los errores.
-    Hay varias maneras de hacer al programa más eficiente y usable (No funcionales)
-    """
-    encontrado = False
     for i in range(len(matriz)):
         for j in range(len(matriz[i])):
             if (matriz[i][j] == x):
                 encontrado = True
     return encontrado
+
+
+
+
+
+def busqueda_matriz_no_eficiente(matriz, x):
+    """Eficiencia baja
+    En esta función se han solventado los errores.
+    Hay varias maneras de hacer al programa más eficiente y usable(No funcionales)
+    """
+    for fila in matriz:
+        for celda in fila:
+            if (celda == x):
+               return True
+    return False
 
 
 

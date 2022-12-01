@@ -6,7 +6,7 @@ def suma(x, y):
         y: segundo valor a sumar
     return: x+y
     """
-    return x+y
+    return y+x
 
 def resta(x, y):
     """
@@ -16,9 +16,9 @@ def resta(x, y):
         y: segundo valor a restar
     return: x-y
     """
-    return x-y
+    return y-x
 
-def resta(x, y):
+def multiplica(x, y):
     """
     Funcion que recibe por parametros 2 argumentos y devuelve la multiplicacion de ambos
     Args:
@@ -26,9 +26,9 @@ def resta(x, y):
         y: segundo valor a multiplicar
     return: x*y
     """
-    return x*y
+    return x**y
 
-def division(x, y):
+def divide(x, y):
     """
     Funcion que recibe por parametros 2 argumentos y devuelve la division de ambos
     Args:
